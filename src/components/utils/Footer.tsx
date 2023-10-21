@@ -1,20 +1,21 @@
+import "../../index.css";
 import { apple } from "../../assets/icons";
 export default function Footer() {
   return (
-    <footer className="bg-emerald-400 z-30 py-8 w-full">
+    <footer className="z-30 py-8 w-full absolute bottom-0">
       <table className="w-full">
         <tr>
-          <th className="text-sm text-[#ccc]">PRICE</th>
-          <th className="text-sm text-[#ccc]">% RETURN</th>
-          <th className="text-sm text-[#ccc]">SYMBOL</th>
-          <th className="text-sm text-[#ccc]">TOTAL NET COST</th>
-          <th className="text-sm text-[#ccc]">MARKET VALUE</th>
-          <th className="text-sm text-[#ccc]">TOTAL GAIN</th>
-          <th className="text-sm text-[#ccc]">DAILY GAIN</th>
-          <th className="text-sm text-[#ccc]">% PORTFOLIO</th>
+          <th className="text-xs text-[#ccc]">SYMBOL</th>
+          <th className="text-xs text-[#ccc]">PRICE</th>
+          <th className="text-xs text-[#ccc]">% RETURN</th>
+          <th className="text-xs text-[#ccc]">TOTAL NET COST</th>
+          <th className="text-xs text-[#ccc]">MARKET VALUE</th>
+          <th className="text-xs text-[#ccc]">TOTAL GAIN</th>
+          <th className="text-xs text-[#ccc]">DAILY GAIN</th>
+          <th className="text-xs text-[#ccc]">% PORTFOLIO</th>
         </tr>
         <tr>
-          <td className="flex flex-row">
+          <td className="flex flex-row justify-center items-center gap-3">
             <img src={apple} className="w-5" />
             <span>AAPL</span>
           </td>

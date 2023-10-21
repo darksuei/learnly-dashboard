@@ -2,7 +2,7 @@ import { star, alarm, plus } from "../../assets/icons";
 
 export default function Menu() {
   return (
-    <div className="flex flex-row items-center gap-5 w-7/12 h-20 bg-red-200 ml-auto relative top-0 z-30">
+    <div className="flex flex-row items-center gap-5 w-7/12 h-20 bg-red-200 ml-auto z-30">
       <div className="flex flex-row gap-2 items-center text-[#6c6c6c]">
         <img src={star} width={20} />
         <span>US stock market opens in 3 hours</span>

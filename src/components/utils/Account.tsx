@@ -1,8 +1,9 @@
+import "../../index.css";
 import { arrow } from "../../assets/icons";
 
 export default function Account() {
   return (
-    <section className="flex flex-row px-10 gap-10">
+    <section className="flex flex-row px-10 gap-1 h-2/6">
       <div className="p-4 bg-white">
         <h1>Upgrade your account</h1>
         <p>Access to many other features and helpful insights</p>

@@ -5,7 +5,7 @@ import Account from "./Account";
 
 export default function MainComponent() {
   return (
-    <div className="z-20 relative">
+    <div className="z-20 relative h-full">
       <Menu />
       <Account />
       <Portfolio />

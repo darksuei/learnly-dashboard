@@ -1,8 +1,9 @@
+import "../../index.css";
 import PortfolioItem from "./PortfolioItem";
 
 export default function Portfolio() {
   return (
-    <section className="w-full z-30 flex flex-col gap-5 px-10">
+    <section className="w-full z-30 flex flex-col gap-5 px-10 portfolio">
       <h1>Portfolio History</h1>
       <div className="flex flex-row w-full gap-10">
         <div className="flex flex-row">
