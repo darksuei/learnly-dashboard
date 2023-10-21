@@ -11,3 +11,15 @@
 .nav {
   width: 20%;
 }
+.main {
+  width: 80%;
+}
+.bg {
+  border-bottom-left-radius: 20%;
+  height: 37%;
+}
+.portfolio-line {
+  background-color: #ccc;
+  height: 3px;
+  width: 30%;
+}
