@@ -2,8 +2,8 @@ import { star, alarm, plus } from "../../assets/icons";
 
 export default function Menu() {
   return (
-    <div className="flex flex-row items-center gap-5 w-7/12 h-20 bg-red-200 ml-auto z-30">
-      <div className="flex flex-row gap-2 items-center text-[#6c6c6c]">
+    <div className="flex flex-row items-center justify-center gap-5 w-6/12 h-20 ml-auto z-30">
+      <div className="flex flex-row gap-2 items-center justify-center text-[#6c6c6c]">
         <img src={star} width={20} />
         <span>US stock market opens in 3 hours</span>
       </div>
@@ -11,10 +11,10 @@ export default function Menu() {
         <option>Main Wallet</option>
       </select>
       <div>
-        <img src={alarm} className="w-10" />
+        <img src={alarm} className="w-6" />
       </div>
-      <div className="bg-black rounded-full p-4">
-        <img src={plus} className="w-10" />
+      <div className="">
+        <img src={plus} className="w-8" />
       </div>
     </div>
   );

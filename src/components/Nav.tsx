@@ -4,7 +4,7 @@ import { dashboard, performance, wallet, logout } from "../assets/icons";
 
 export default function Nav() {
   return (
-    <nav className="nav h-screen relative py-10 bg-red-100 text-sm">
+    <nav className="nav h-screen relative py-10 text-sm">
       <Profile />
       <ul className="w-full flex flex-col gap-y-5 items-center my-5">
         <li className="w-full">

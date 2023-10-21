@@ -26,11 +26,6 @@
 .account {
   height: 20%;
 }
-
-.portfolio {
-  background-color: red;
-}
-
 td,
 th {
   text-align: right;
@@ -48,5 +43,11 @@ td:nth-child(6) {
   color: #00ff00;
 }
 td:nth-child(7) {
+  color: #ff0000;
+}
+.green {
+  color: #2dc83a;
+}
+.red {
   color: #ff0000;
 }
