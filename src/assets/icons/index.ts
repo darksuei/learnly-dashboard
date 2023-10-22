@@ -9,6 +9,7 @@ import alarm from "./alarm.svg";
 import dollar from "./dollar.svg";
 import plus from "./plus.svg";
 import uparrow from "./uparrow.svg";
+import downarrow from "./downarrow.svg";
 
 export {
   logout,
@@ -22,4 +23,5 @@ export {
   dollar,
   plus,
   uparrow,
+  downarrow,
 };

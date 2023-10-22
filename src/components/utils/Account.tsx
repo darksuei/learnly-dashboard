@@ -5,8 +5,8 @@ import AccountInfo from "./AccountInfo";
 
 export default function Account() {
   return (
-    <section className="flex flex-row justify-center gap-8 px-10 w-full h-[27%]">
-      <div className="p-6 bg-white w-4/12 relative rounded-2xl">
+    <section className="flex flex-row justify-between w-10/12 mx-auto h-[27%]">
+      <div className="p-6 bg-white w-4/12 relative rounded-2xl shadow h-56">
         <h1 className="text-xl text-center mb-3">Upgrade your account</h1>
         <p className="text-xs text-gray-500 w-6/12 ml-auto">
           Access to many other features and helpful insights

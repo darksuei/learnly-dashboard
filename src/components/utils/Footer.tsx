@@ -2,7 +2,7 @@ import "../../index.css";
 import { apple } from "../../assets/icons";
 export default function Footer() {
   return (
-    <footer className="z-30 py-8 w-full">
+    <footer className="z-30 py-8 w-10/12 mx-auto">
       <table className="w-full">
         <tr>
           <th className="text-xs text-[#ccc]">SYMBOL</th>

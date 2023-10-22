@@ -8,7 +8,7 @@ export default function Menu() {
         <img src={star} width={20} />
         <span>US stock market opens in 3 hours</span>
       </div>
-      <select className="h-fit py-2 outline-none rounded-md bg-[#f2f2f2] text-[#6c6c6c] cursor-pointer px-3">
+      <select className="h-fit py-2 outline-none rounded-md bg-[#f2f2f2] text-[#6c6c6c] cursor-pointer">
         <option className="p-4">Main Wallet</option>
         <option className="p-4">Secondary Wallet</option>
       </select>
@@ -17,7 +17,7 @@ export default function Menu() {
         <img src={alarm} className="w-5 cursor-pointer" />
       </div>
       <div className="">
-        <img src={plus} className="w-9 cursor-pointer" />
+        <img src={plus} className="w-9 cursor-pointer hover:w-10" />
       </div>
     </div>
   );

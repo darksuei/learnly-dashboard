@@ -1,13 +1,23 @@
 import "../../index.css";
 
-export default function AccountGraph({ data }: { data: string }) {
-  const length1 = Math.round(Math.random() * 50);
+export default function AccountGraph({
+  data,
+  height,
+}: {
+  data: string;
+  height: string;
+}) {
+  const length1 = Math.round(Math.random() * 40) + 15;
   const length2 = 20;
-  const length3 = 80 - length1;
+  const length3 = 75 - length1;
+  console.log(height);
 
   return (
     <main className="flex flex-col items-center justify-center">
-      <div className="h-32 w-1.5 rounded-xl bg-yellow-200 flex flex-col">
+      <div
+        style={{ height: `${height}` }}
+        className="w-1.5 rounded-xl bg-yellow-200 flex flex-col"
+      >
         <div
           style={{ height: `${length1}%` }}
           className="w-full bg-blue-600 rounded-xl"

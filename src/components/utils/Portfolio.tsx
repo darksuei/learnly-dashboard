@@ -4,10 +4,10 @@ import industries from "../../assets/images/industries.png";
 
 export default function Portfolio() {
   return (
-    <section className="w-full z-30 flex flex-col gap-3">
-      <h1>Portfolio History</h1>
-      <div className="flex flex-row w-full gap-10 items-center justify-between">
-        <div className="flex flex-row gap-5 w-8/12">
+    <section className="w-10/12 mx-auto z-30 flex flex-col gap-1 mt-10">
+      <h1 className="text-sm px-3 font-semibold">Portfolio History</h1>
+      <div className="flex flex-row w-full gap-3 items-center justify-between">
+        <div className="flex flex-row justify-between w-8/12">
           <PortfolioItem
             date="NOV 19"
             value="$ 9 864.34"
@@ -28,9 +28,12 @@ export default function Portfolio() {
             isGain={false}
           />
         </div>
-        <div className="w-5/12 flex items-center justify-center">
+        <div className="w-4/12 flex items-center justify-end">
           <div className="bg-blue-700 rounded-3xl flex items-center justify-center">
-            <img src={industries} className="w-72 cursor-pointer" />
+            <img
+              src={industries}
+              className="w-72 cursor-pointer hover:scale-105"
+            />
           </div>
         </div>
       </div>

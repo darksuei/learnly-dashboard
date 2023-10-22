@@ -1,4 +1,5 @@
 import "../../index.css";
+import { useState } from "react";
 
 type Params = {
   title: string;
@@ -7,15 +8,26 @@ type Params = {
 };
 
 export default function NavItem({ title, icon, isActive }: Params) {
+  const [active, setActive] = useState(false);
+  function handleMouseEnter() {
+    setActive(true);
+  }
+  function handleMouseLeave() {
+    setActive(false);
+  }
   return (
     <div className="w-6/12 mx-auto py-3 cursor-pointer">
-      <span className="flex flex-row items-center justify-start gap-3">
+      <div
+        className="flex flex-row items-center justify-start gap-4"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
         {icon && <img src={icon} alt={title} width={20} />}
         <div>
           <h2>{title}</h2>
-          {isActive && <div className="navitem"></div>}
+          {(isActive || active) && <div className="navitem"></div>}
         </div>
-      </span>
+      </div>
     </div>
   );
 }

@@ -6,7 +6,7 @@ type Params = {
 
 export default function PortfolioGraph({ hasGraph }: Params) {
   return (
-    <main className="w-full h-24 flex items-center justify-center">
+    <main className="w-full h-20 flex items-center justify-center">
       {hasGraph && <img src={portfoliograph} className="w-full" />}
     </main>
   );

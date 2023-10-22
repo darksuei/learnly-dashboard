@@ -11,10 +11,10 @@ export default function Nav() {
           <NavItem title="Dashboard" isActive={true} icon={dashboard} />
         </li>
         <li className="w-full">
-          <NavItem title="Performance" icon={wallet} />
+          <NavItem title="Holdings" icon={wallet} />
         </li>
         <li className="w-full">
-          <NavItem title="Holdings" icon={performance} />
+          <NavItem title="Performance" icon={performance} />
         </li>
       </ul>
       <div className="absolute bottom-10 w-full">
