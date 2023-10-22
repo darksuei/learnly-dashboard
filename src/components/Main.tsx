@@ -4,7 +4,7 @@ import MainComponent from "./utils/MainComponent";
 
 export default function Main() {
   return (
-    <section className="main-section h-screen mx-auto relative">
+    <section className="main-section mx-auto relative">
       <MainBg />
       <MainComponent />
     </section>

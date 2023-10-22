@@ -1,5 +1,6 @@
 import Main from "./components/Main";
 import Nav from "./components/Nav";
+import { ProfileContext } from "./contexts/ProfileContext";
 
 function App() {
   return (

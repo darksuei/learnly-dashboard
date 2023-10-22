@@ -16,7 +16,12 @@ export default function NavItem({ title, icon, isActive }: Params) {
     setActive(false);
   }
   return (
-    <div className="w-6/12 mx-auto py-3 cursor-pointer">
+    <div
+      className="w-9/12 lg:w-6/12 mx-auto py-3 cursor-pointer"
+      onClick={() => {
+        alert("Coming Soon!");
+      }}
+    >
       <div
         className="flex flex-row items-center justify-start gap-4"
         onMouseEnter={handleMouseEnter}

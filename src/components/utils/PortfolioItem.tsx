@@ -21,7 +21,7 @@ export default function PortfolioItem({
   const [isActive, setIsActive] = useState(false);
   return (
     <div
-      className={`border-2 h-fit py-7 w-52 px-5 rounded-2xl flex flex-col gap-1.5 cursor-pointer ${
+      className={`mx-auto lg:mx-0 border-2 h-fit py-5 w-7/12 lg:w-52 px-5 rounded-2xl flex flex-col gap-1.5 cursor-pointer ${
         active ? "bg-gray-100" : ""
       } hover:bg-gray-100`}
       onMouseEnter={() => setIsActive(true)}

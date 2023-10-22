@@ -24,7 +24,7 @@ export default function AccountGraph({
         ></div>
         <div
           style={{ height: `${length2}%` }}
-          className="w-full bg-[#00ff00] rounded-xl"
+          className="w-full bg-[#68d391] rounded-xl"
         ></div>
         <div
           style={{ height: `${length3}%` }}

@@ -24,8 +24,8 @@ export default function AccountInfo() {
   ];
 
   return (
-    <main className="w-7/12 bg-white rounded-2xl p-5 px-7 flex flex-row justify-center gap-3 shadow h-56">
-      <div className="w-8/12">
+    <main className="w-11/12 mx-auto lg:w-7/12 bg-white rounded-2xl p-5 flex flex-col h-fit lg:flex-row justify-center gap-3 shadow lg:h-56 z-50">
+      <div className="w-11/12 mx-auto lg:mx-0 lg:w-8/12">
         <div className="flex flex-row gap-3 items-center h-1/6">
           {timeframe.map((time, index) => {
             return (
@@ -53,17 +53,17 @@ export default function AccountInfo() {
         </div>
       </div>
 
-      <div className="w-3/12 h-full ml-auto">
+      <div className="w-10/12 mx-auto lg:mx-0 lg:w-3/12 h-full ml-auto">
         <div className="mb-2">
           <img src={dollar} width={25} className="ml-auto" />
         </div>
         <h2 className="text-xs">Portfolio Value</h2>
-        <h1 className="text-2xl">$ 9 864.34</h1>
+        <h1 className="text-xl">$ 9 864.34</h1>
         <h3 className="text-sm font-semibold text-green-600 mb-2 flex flex-row items-center">
           <img src={uparrow} width={20} />
           <span>234.23 (30.34%)</span>
         </h3>
-        <ul>
+        <ul className="flex flex-col gap-2">
           {portfolioitems.map((item, index) => {
             return (
               <li
