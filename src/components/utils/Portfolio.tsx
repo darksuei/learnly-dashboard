@@ -1,5 +1,6 @@
 import "../../index.css";
 import PortfolioItem from "./PortfolioItem";
+import industries from "../../assets/images/industries.png";
 
 export default function Portfolio() {
   return (
@@ -10,24 +11,27 @@ export default function Portfolio() {
           <PortfolioItem
             date="NOV 19"
             value="$ 9 864.34"
-            gain="+ 234.23 (30.34%)"
+            gain="234.23 (30.34%)"
             isGain={true}
           />
           <PortfolioItem
             date="OCT 19"
             value="$ 7 845.32"
-            gain="+ 143.56 (15.43%)"
+            gain="143.56 (15.43%)"
             isGain={true}
+            active={true}
           />
           <PortfolioItem
             date="SEP 19"
             value="$ 7 453.45"
-            gain="+ -134.23 (-8.34%)"
+            gain="-134.23 (-8.34%)"
             isGain={false}
           />
         </div>
         <div className="w-5/12 flex items-center justify-center">
-          <div className="w-60 h-60 bg-blue-700 rounded-3xl"></div>
+          <div className="bg-blue-700 rounded-3xl flex items-center justify-center">
+            <img src={industries} className="w-72 cursor-pointer" />
+          </div>
         </div>
       </div>
     </section>

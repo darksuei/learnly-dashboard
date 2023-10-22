@@ -51,3 +51,15 @@ td:nth-child(7) {
 .red {
   color: #ff0000;
 }
+.bg-red {
+  background-color: #ff0000;
+}
+.bg-green {
+  background-color: #2dc83a;
+}
+.accounticon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-27%, 14%);
+}
