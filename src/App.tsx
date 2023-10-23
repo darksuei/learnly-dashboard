@@ -1,13 +1,18 @@
 import Main from "./components/Main";
 import Nav from "./components/Nav";
 import { ProfileContext } from "./contexts/ProfileContext";
+import { useState } from "react";
 
 function App() {
+  const [value, setValue] = useState("$ 9 864.34");
+  const [gain, setGain] = useState("234.23 (30.34%)");
   return (
-    <main className="flex flex-row bg-white wrapper">
-      <Nav />
-      <Main />
-    </main>
+    <ProfileContext.Provider value={{ value, setValue, gain, setGain }}>
+      <main className="flex flex-row bg-white wrapper">
+        <Nav />
+        <Main />
+      </main>
+    </ProfileContext.Provider>
   );
 }
 

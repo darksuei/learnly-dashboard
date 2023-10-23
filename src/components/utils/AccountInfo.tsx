@@ -1,7 +1,10 @@
 import { dollar, uparrow } from "../../assets/icons";
 import AccountGraph from "./AcountGraph";
+import { ProfileContext } from "../../contexts/ProfileContext";
+import { useContext } from "react";
 
 export default function AccountInfo() {
+  const { value, gain } = useContext(ProfileContext);
   const timeframe = ["1d", "1w", "1m", "1y", "All"];
   const months = [
     "Jan;85px",
@@ -58,10 +61,10 @@ export default function AccountInfo() {
           <img src={dollar} width={25} className="ml-auto" />
         </div>
         <h2 className="text-xs">Portfolio Value</h2>
-        <h1 className="text-xl">$ 9 864.34</h1>
+        <h1 className="text-xl">{value}</h1>
         <h3 className="text-sm font-semibold text-green-600 mb-2 flex flex-row items-center">
           <img src={uparrow} width={20} />
-          <span>234.23 (30.34%)</span>
+          <span>{gain}</span>
         </h3>
         <ul className="flex flex-col gap-2">
           {portfolioitems.map((item, index) => {

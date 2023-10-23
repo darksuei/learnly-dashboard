@@ -14,10 +14,24 @@ export default function Menu() {
       </select>
       <div className="relative p-1">
         <div className="w-1.5 h-1.5 z-50 rounded-full bg-[#ff0000] absolute top-0 right-0"></div>
-        <img src={alarm} width={20} className="cursor-pointer" />
+        <img
+          src={alarm}
+          width={20}
+          className="cursor-pointer"
+          onClick={() => {
+            alert("You have no notifications");
+          }}
+        />
       </div>
       <div className="">
-        <img src={plus} width={32} className="cursor-pointer hover:w-10" />
+        <img
+          src={plus}
+          width={32}
+          className="cursor-pointer hover:w-10"
+          onClick={() => {
+            alert("Coming soon!");
+          }}
+        />
       </div>
     </div>
   );

@@ -2,6 +2,8 @@ import "../../index.css";
 import PortfolioGraph from "./PortfolioGraph";
 import { uparrow, downarrow } from "../../assets/icons";
 import { useState } from "react";
+import { ProfileContext } from "../../contexts/ProfileContext";
+import { useContext } from "react";
 
 type Params = {
   date: string;
@@ -19,13 +21,22 @@ export default function PortfolioItem({
   active,
 }: Params) {
   const [isActive, setIsActive] = useState(false);
+  const { setValue, setGain } = useContext(ProfileContext);
+  function handleMouseEnter() {
+    setIsActive(true);
+    setValue(value);
+    setGain(gain);
+  }
+  function handleMouseLeave() {
+    setIsActive(false);
+  }
   return (
     <div
       className={`mx-auto lg:mx-0 border-2 h-fit py-5 w-7/12 lg:w-52 px-5 rounded-2xl flex flex-col gap-1.5 cursor-pointer ${
         active ? "bg-gray-100" : ""
       } hover:bg-gray-100`}
-      onMouseEnter={() => setIsActive(true)}
-      onMouseLeave={() => setIsActive(false)}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       <div className="mb-2">
         <h2 className="font-semibold text-lg w-fit">{date}</h2>

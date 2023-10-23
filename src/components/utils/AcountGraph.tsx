@@ -9,14 +9,14 @@ export default function AccountGraph({
 }) {
   const length1 = Math.round(Math.random() * 40) + 15;
   const length2 = 20;
-  const length3 = 75 - length1;
+  const length3 = 80 - length1;
   console.log(height);
 
   return (
-    <main className="flex flex-col items-center justify-center">
+    <main className="flex flex-col gap-2 items-center justify-center">
       <div
         style={{ height: `${height}` }}
-        className="w-1.5 rounded-xl bg-yellow-200 flex flex-col"
+        className="w-1.5 rounded-xl flex flex-col"
       >
         <div
           style={{ height: `${length1}%` }}
