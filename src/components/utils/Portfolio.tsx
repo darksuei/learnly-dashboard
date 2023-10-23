@@ -1,4 +1,4 @@
-import "../../index.css";
+import "../../index.scss";
 import PortfolioItem from "./PortfolioItem";
 import industries from "../../assets/images/industries.png";
 

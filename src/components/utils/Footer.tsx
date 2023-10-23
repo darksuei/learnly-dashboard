@@ -1,4 +1,4 @@
-import "../../index.css";
+import "../../index.scss";
 import { apple } from "../../assets/icons";
 export default function Footer() {
   return (

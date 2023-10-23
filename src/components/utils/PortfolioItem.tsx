@@ -1,4 +1,4 @@
-import "../../index.css";
+import "../../index.scss";
 import PortfolioGraph from "./PortfolioGraph";
 import { uparrow, downarrow } from "../../assets/icons";
 import { useState } from "react";

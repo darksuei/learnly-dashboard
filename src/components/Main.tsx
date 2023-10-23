@@ -1,4 +1,4 @@
-import "../index.css";
+import "../index.scss";
 import MainBg from "./utils/Main-bg";
 import MainComponent from "./utils/MainComponent";
 

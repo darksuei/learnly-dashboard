@@ -1,4 +1,4 @@
-import "../../index.css";
+import "../../index.scss";
 import { arrow } from "../../assets/icons";
 import icon from "../../assets/images/icon.png";
 import AccountInfo from "./AccountInfo";

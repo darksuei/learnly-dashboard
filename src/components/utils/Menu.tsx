@@ -1,4 +1,4 @@
-import "../../index.css";
+import "../../index.scss";
 import { star, alarm, plus } from "../../assets/icons";
 
 export default function Menu() {
