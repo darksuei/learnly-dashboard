@@ -35,7 +35,7 @@ export default function Portfolio() {
           <div className="flex flex-col items-center justify-center gap-3">
             <img
               src={industries}
-              className="w-72 cursor-pointer hover:scale-105"
+              className="w-64 cursor-pointer hover:scale-105"
             />
           </div>
         </div>

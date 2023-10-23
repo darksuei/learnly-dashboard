@@ -27,7 +27,7 @@ export default function AccountInfo() {
   ];
 
   return (
-    <main className="w-11/12 mx-auto lg:w-7/12 bg-white rounded-2xl p-5 flex flex-col h-fit lg:flex-row justify-center gap-3 shadow lg:h-56 z-50">
+    <main className="w-11/12 mx-auto lg:w-6/12 bg-white rounded-2xl p-5 flex flex-col h-fit lg:flex-row justify-between items-center gap-3 shadow lg:h-48 z-50">
       <div className="w-11/12 mx-auto lg:mx-0 lg:w-8/12">
         <div className="flex flex-row gap-3 items-center h-1/6">
           {timeframe.map((time, index) => {
@@ -43,7 +43,7 @@ export default function AccountInfo() {
             );
           })}
         </div>
-        <div className="flex flex-row justify-between items-end h-5/6 relative">
+        <div className="flex flex-row justify-around items-end h-5/6 relative">
           {months.map((month, index) => {
             return (
               <AccountGraph
@@ -56,17 +56,17 @@ export default function AccountInfo() {
         </div>
       </div>
 
-      <div className="w-10/12 mx-auto lg:mx-0 lg:w-3/12 h-full ml-auto">
-        <div className="mb-2">
+      <div className="w-10/12 mx-auto lg:mx-0 lg:w-4/12 h-full ml-auto">
+        <div className="">
           <img src={dollar} width={25} className="ml-auto" />
         </div>
         <h2 className="text-xs">Portfolio Value</h2>
-        <h1 className="text-xl">{value}</h1>
-        <h3 className="text-sm font-semibold text-green-600 mb-2 flex flex-row items-center">
+        <h1 className="text-lg">{value}</h1>
+        <h3 className="text-xs font-semibold text-green-600 mb-2 flex flex-row items-center">
           <img src={uparrow} width={20} />
           <span>{gain}</span>
         </h3>
-        <ul className="flex flex-col gap-2">
+        <ul className="flex flex-col gap-1">
           {portfolioitems.map((item, index) => {
             return (
               <li

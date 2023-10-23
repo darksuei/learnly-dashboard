@@ -39,15 +39,15 @@ export default function PortfolioItem({
       onMouseLeave={handleMouseLeave}
     >
       <div className="mb-2">
-        <h2 className="font-semibold text-lg w-fit">{date}</h2>
+        <h2 className="font-semibold text-base w-fit">{date}</h2>
         <div className="portfolio-line"></div>
       </div>
       <div className="w-full h-2/6"></div>
       <PortfolioGraph hasGraph={active || isActive} />
       <h2 className="text-xs">Portfolio Value</h2>
-      <h1 className="text-2xl">{value}</h1>
+      <h1 className="text-lg">{value}</h1>
       <h3
-        className={`text-sm flex flex-row items-center gap-1 ${
+        className={`text-xs flex flex-row items-center gap-1 ${
           isGain ? "text-green-500" : "red"
         }`}
       >
