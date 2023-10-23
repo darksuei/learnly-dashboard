@@ -1,9 +1,10 @@
 import "../../index.scss";
+import { useState, useContext } from "react";
+
+//Components
+import { ProfileContext } from "../../contexts/ProfileContext";
 import PortfolioGraph from "./PortfolioGraph";
 import { uparrow, downarrow } from "../../assets/icons";
-import { useState } from "react";
-import { ProfileContext } from "../../contexts/ProfileContext";
-import { useContext } from "react";
 
 type Params = {
   date: string;
@@ -24,16 +25,17 @@ export default function PortfolioItem({
   const { setValue, setGain } = useContext(ProfileContext);
   function handleMouseEnter() {
     setIsActive(true);
-    setValue(value);
-    setGain(gain);
+    setValue!(value);
+    setGain!(gain);
   }
   function handleMouseLeave() {
     setIsActive(false);
   }
+
   return (
     <div
       className={`mx-auto lg:mx-0 border-2 h-fit py-5 w-7/12 lg:w-52 px-5 rounded-2xl flex flex-col gap-1.5 cursor-pointer ${
-        active ? "bg-gray-100" : ""
+        active ? "bg-gray-100" : "bg-white"
       } hover:bg-gray-100`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

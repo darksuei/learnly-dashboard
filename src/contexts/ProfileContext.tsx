@@ -1,3 +1,10 @@
 import { createContext } from "react";
 
-export const ProfileContext = createContext({} as any);
+type ProfileContextType = {
+  value?: string;
+  setValue?: React.Dispatch<React.SetStateAction<string>>;
+  gain?: string;
+  setGain?: React.Dispatch<React.SetStateAction<string>>;
+};
+
+export const ProfileContext = createContext<ProfileContextType>({});

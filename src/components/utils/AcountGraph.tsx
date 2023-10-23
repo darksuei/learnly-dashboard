@@ -10,7 +10,6 @@ export default function AccountGraph({
   const length1 = Math.round(Math.random() * 40) + 15;
   const length2 = 20;
   const length3 = 80 - length1;
-  console.log(height);
 
   return (
     <main className="flex flex-col gap-2 items-center justify-center">

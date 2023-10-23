@@ -10,7 +10,6 @@ export default function Menu() {
       </div>
       <select className="py-2 outline-none rounded-lg bg-[#f2f2f2] text-[#6c6c6c] cursor-pointer">
         <option className="py-4 text-xs">Main Wallet</option>
-        {/* <option className="py-4 text-xs">Secondary Wallet</option> */}
       </select>
       <div className="relative p-1">
         <div className="w-1.5 h-1.5 z-50 rounded-full bg-[#ff0000] absolute top-0 right-0"></div>

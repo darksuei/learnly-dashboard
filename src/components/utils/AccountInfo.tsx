@@ -1,33 +1,35 @@
-import { dollar, uparrow } from "../../assets/icons";
-import AccountGraph from "./AcountGraph";
+import { useContext, useRef, useLayoutEffect } from "react";
+import gsap from "gsap";
 import { ProfileContext } from "../../contexts/ProfileContext";
-import { useContext } from "react";
+//Assets
+import { dollar, uparrow } from "../../assets/icons";
+import { timeframe, portfolioitems, months } from "./data";
+//Components
+import AccountGraph from "./AcountGraph";
 
 export default function AccountInfo() {
   const { value, gain } = useContext(ProfileContext);
-  const timeframe = ["1d", "1w", "1m", "1y", "All"];
-  const months = [
-    "Jan;85px",
-    "Feb;95px",
-    "Mar;105px",
-    "Apr;90px",
-    "May;100px",
-    "Jun;85px",
-    "Jul;75px",
-    "Aug;95px",
-    "Sep;85px",
-    "Oct;75px",
-    "Nov;95px",
-    "Dec;90px",
-  ];
-  const portfolioitems = [
-    "Portfolio;bg-blue-500",
-    "Dollar;bg-green",
-    "ETFs;bg-red",
-  ];
+  const accountInfoRef = useRef(null);
+
+  useLayoutEffect(() => {
+    gsap.fromTo(
+      accountInfoRef.current,
+      {
+        x: 150,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+      }
+    );
+  }, []);
 
   return (
-    <main className="w-11/12 mx-auto lg:w-6/12 bg-white rounded-2xl p-5 flex flex-col h-fit lg:flex-row justify-between items-center gap-3 shadow lg:h-48 z-50">
+    <main
+      ref={accountInfoRef}
+      className="w-11/12 mx-auto lg:w-6/12 bg-white rounded-2xl p-5 flex flex-col h-fit lg:flex-row justify-between items-center gap-3 shadow lg:h-48 z-50"
+    >
       <div className="w-11/12 mx-auto lg:mx-0 lg:w-8/12">
         <div className="flex flex-row gap-3 items-center h-1/6">
           {timeframe.map((time, index) => {

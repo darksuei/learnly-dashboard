@@ -1,8 +1,9 @@
+import { useState } from "react";
+// Components
 import NavItem from "./utils/NavItem";
 import Profile from "./utils/Profile";
-import { dashboard, performance, wallet, logout } from "../assets/icons";
 import Hamburger from "./utils/Hamburger";
-import { useState } from "react";
+import { dashboard, performance, wallet, logout } from "../assets/icons";
 
 export default function Nav() {
   const [isActive, setActive] = useState(false);

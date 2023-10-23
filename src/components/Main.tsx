@@ -1,4 +1,5 @@
 import "../index.scss";
+// Components
 import MainBg from "./utils/Main-bg";
 import MainComponent from "./utils/MainComponent";
 

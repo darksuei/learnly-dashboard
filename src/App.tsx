@@ -1,7 +1,9 @@
+import { useState } from "react";
+import { ProfileContext } from "./contexts/ProfileContext";
+
+//Components
 import Main from "./components/Main";
 import Nav from "./components/Nav";
-import { ProfileContext } from "./contexts/ProfileContext";
-import { useState } from "react";
 
 function App() {
   const [value, setValue] = useState("$ 9 864.34");
